@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Land Gallery: {{title | default: "Print Studio"}}</title>
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/land-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/land-icon.svg">
+  <!-- Minified CSS --> {% capture css %}{% include 'style.css'%}{% endcapture %}
+  <style>{{ css | cssmin }}</style>
+</head>
+<body>
+<div class="wrapper">
+	<!-- top color bar and logo link -->
+	<header class="page-header">
+		<a href="/">
+			<div class="logo-container">
+			<div class="brick color-1"></div>
+			<div class="brick color-2"></div>
+			<div class="brick color-3"></div>
+			<div class="brick color-4"></div>
+			<div class="brick color-5"></div>
+			<div class="brick color-6"></div>
+			<div class="brick color-7"></div>
+			<div class="land-logo color-black text-white">LAND GALLERY</div>
+			<div class="brick color-7"></div>
+			<div class="brick color-6"></div>
+			<div class="brick color-5"></div>
+			<div class="brick color-4"></div>
+			<div class="brick color-3"></div>
+			<div class="brick color-2"></div>
+			<div class="brick color-1"></div>
+		</div>
+		</a>
+		
+		<!-- star list top-level navigation -->	
+		<nav role="navigation"  class="navbar">
+		{% assign navPages = collections.all | eleventyNavigation %}
+		<ul>
+		{%- for entry in navPages %}
+			{% assign entry_url_parts = entry.url | split: '/' %}
+			{% assign page_url_parts = page.url | split: '/' %}
+	  	<li {% if entry.url == page.url %} class="active-nav-link"{% endif %} {% if entry_url_parts[1] == page_url_parts[1]%} class="active-nav-link-parent"{% endif %}>
+			<a href="{{ entry.url }}">{{ entry.title }}</a>
+	  	</li>
+		{%- endfor %}
+		</ul>
+		</nav>
+	
+		<!-- children nav if children -->
+		{%- for entry in navPages %}
+			{% assign entry_url_parts = entry.url | split: '/' %}
+			{% assign page_url_parts = page.url | split: '/' %}
+			{% if entry.children.length > 0 and entry_url_parts[1] == page_url_parts[1] %}
+			<nav role="navigation"  class="navbar navbar-children">
+				<ul>
+    			{%- for child in entry.children %}
+					{% assign child_url_parts = child.url | split: '/' %}
+					<li {% if child.url == page.url %} class="active-nav-link"{% endif %}{% if child.url == page.url or child_url_parts[2] == page_url_parts[2] %} class="active-nav-link-parent"{% endif %}><a href="{{child.url}}">{{ child.title }}</a></li>
+				{% endfor %}
+				</ul>
+			</nav>
+			{% endif %}
+		{%- endfor %}
+
+		{% assign page_url_parts = page.url | split: '/' %}
+		{% if page_url_parts[2] == "riso" %}
+			<nav role="navigation"  class="navbar navbar-grandchildren">
+			<ul>
+			{% for grandchildren in collections.riso %}
+				<li {% if grandchildren.url == page.url %} class="active-nav-link"{% endif %}><a href="{{grandchildren.url}}">{{ grandchildren.data.title }}</a></li>
+			{% endfor %}
+			</ul>
+			</nav>
+		{% endif %}
+
+	</header>
+
+	<main class="page-body">
+		<div class="container">
+			{{ content }}
+		</div>
+	</main>
+	
+	<footer class="page-footer">
+		<div class="logo-container">
+			<div class="brick color-1"></div>
+			<div class="brick color-2"></div>
+			<div class="brick color-3"></div>
+			<div class="brick color-4"></div>
+			<div class="brick color-5"></div>
+			<div class="brick color-6"></div>
+			<div class="brick color-7"></div>
+			<div class="land-logo color-black text-white"></div>
+			<div class="brick color-7"></div>
+			<div class="brick color-6"></div>
+			<div class="brick color-5"></div>
+			<div class="brick color-4"></div>
+			<div class="brick color-3"></div>
+			<div class="brick color-2"></div>
+			<div class="brick color-1"></div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>
