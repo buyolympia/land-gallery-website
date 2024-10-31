@@ -25,4 +25,6 @@ jobs:
       - name: Install dependencies & build site
         run: |
           npm install
+          npm install @11ty/eleventy-navigation
+          npm install clean-css
           npm run build
