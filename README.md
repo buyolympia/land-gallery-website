@@ -7,3 +7,5 @@ This is an 11ty static site we'll publish to Amazon S3/Cloudfront.
 Details on how to load 11ty can be found here: https://www.11ty.dev
 
 And this is me doing it from my air, just to see. 
+
+And now trying to push to github pages and see what happens.
