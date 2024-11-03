@@ -1,0 +1,42 @@
+body { background-color: #f4f4f4; margin:0px; font-family: "termina", sans-serif;font-weight: 500;}
+a { text-decoration: none; color: #004393;}
+a:hover { text-decoration: none;}
+.page-holder { position: fixed; width: 100%;  align-items: center; top:100px;}
+.logo-container { display: flex; width: 100%; justify-content: center;  display: flex;}
+.link-bar {display: block; justify-content: center; margin:20px; text-align: center;}
+.about-box { display: block; justify-content: center; text-align: center; margin:20px; font-size: 80%;}
+.brick { width:5%; min-height: 50px; height: auto; display: inline-block; padding:4px;}
+.color-1 { background-color: #69b8e7;}
+.color-2 { background-color: #fbd368;}
+.color-3 { background-color: #ed6f63;}
+.color-4 { background-color: #4c7d61;}
+.color-5 { background-color: #d4aacf;}
+.color-6 { background-color: #bd4a53;}
+.color-7 { background-color: #6bcde6;}
+.color-black { background-color: black;}
+.land-logo {
+	display: flex; height: 50px; 
+	text-align: center; vertical-align: middle; line-height: 100%; width: 60%; font-family: "termina", sans-serif;
+	font-weight: 900; font-style: normal; font-size: 25px; line-height: 25px; letter-spacing: 3px; padding: 4px; 
+	justify-content: center; /* Align horizontal */
+	align-items: center
+	}
+.font-white {color: white;}
+
+/* Text Colors */
+.text-white { color: white;}
+
+/* Riso Colors Defined */
+.riso-black { background-color: #000; }
+.riso-medium-blue { background-color: #3255A4;}
+.riso-hunter-green { background-color: #407060;}
+.riso-red { background-color: #FF665E;}
+.riso-coral { background-color: #FF8E91;}
+.riso-fluo-pink { background-color: #FF48B0;}
+.riso-yellow { background-color: #FFE800;}
+.riso-kelly-green { background-color: #67B346;}
+.riso-lime { background-color: #E3ED55;}
+.riso-scarlet { background-color: #F65058;}
+.riso-steel { background-color: #375E77;}
+
+.color-sample {margin:4px;}
