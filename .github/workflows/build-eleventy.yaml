@@ -29,7 +29,7 @@ jobs:
           npm install clean-css
           npm run build
           
-      - name: Deploy
+      - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
