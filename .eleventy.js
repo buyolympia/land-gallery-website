@@ -1,5 +1,4 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
 
@@ -10,7 +9,6 @@ module.exports = function(eleventyConfig) {
 
 	//add nav plugin
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	
 	//add css cleanup 
 	const CleanCSS = require("clean-css");
@@ -21,7 +19,5 @@ module.exports = function(eleventyConfig) {
 	
 	//put the date on the footer?
 	eleventyConfig.addShortcode("thedate", () => `${new Date().getFullYear()}`);
-	
-	pathPrefix: "/land-gallery-website/"
 };
 
