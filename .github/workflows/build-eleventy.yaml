@@ -28,3 +28,9 @@ jobs:
           npm install @11ty/eleventy-navigation
           npm install clean-css
           npm run build
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./_site
