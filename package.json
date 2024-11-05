@@ -3,6 +3,7 @@
     "build": "npx @11ty/eleventy --pathprefix=land-gallery-website"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "clean-css": "^5.3.3"
   }
