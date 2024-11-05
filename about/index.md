@@ -10,7 +10,7 @@ eleventyNavigation:
 
 **Land Gallery** is an active print studio (and former art gallery) in Portland, Oregon run by the folks from [buyolympia.com](https://buyolympia.com/). 
 
-We provide in-house production for artists featured on buyolympia.com and other online and retail shops in a variety of mediums. Since 2008, we've been printing high-quality, gallery-ready pieces in-house. We've sold over 
+We provide in-house production for artists featured on buyolympia.com and other online and retail shops in a variety of mediums. Since 2008, we've been printing high-quality, gallery-ready pieces in-house.
 
 The print studio is unfortunately **not open to the public**. 
 
