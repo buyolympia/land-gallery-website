@@ -16,7 +16,7 @@ The print studio is unfortunately **not open to the public**.
 
 ## History
 
-For over ten years we were an [art gallery and retail shop](https://archive.landpdx.com/) located on Mississippi Avenue in Portland, Oregon. 
+We once were an [art gallery and retail shop](https://archive.landpdx.com/). 
 
 
 ## Contact

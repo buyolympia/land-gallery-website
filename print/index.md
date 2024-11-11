@@ -12,3 +12,9 @@ eleventyNavigation:
 We provide in-house production for artists featured on buyolympia.com and other online and retail shops in a variety of mediums. 
 
 Since 2008, we've been printing high-quality, gallery-ready pieces in-house. We’ve sold over a million prints. 
+
+We print using three different methods:
+
+- [Giclee / Inkjet](giclee)
+- [Riso](riso)
+- [Digital / Toner](digital)
